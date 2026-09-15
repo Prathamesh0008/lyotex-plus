@@ -1,0 +1,6 @@
+.cta { background: var(--color-teal-light); }
+.content { display: flex; align-items: center; justify-content: space-between; gap: 3rem; }
+.content h2 { margin-block: 1rem; }
+.content > div > p:last-child { max-width: 55ch; color: var(--color-muted); }
+.content > a { flex-shrink: 0; }
+@media (max-width: 47.999rem) { .content { flex-direction: column; align-items: stretch; } }

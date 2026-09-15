@@ -1,0 +1,9 @@
+.heading { margin-bottom: 2.75rem; }
+.heading h2 { margin-top: 0.75rem; }
+.grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2rem; }
+.grid li { border-top: 1px solid var(--color-border); padding-top: 1.5rem; }
+.accent { display: block; width: 1.5rem; height: 2px; background: var(--color-teal); margin-bottom: 1.5rem; }
+.grid h3 { font-size: 1.1875rem; line-height: 1.5; letter-spacing: -0.02em; }
+.grid p { margin-top: 0.75rem; color: var(--color-muted); font-size: 0.9375rem; }
+@media (max-width: 63.999rem) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 39.999rem) { .grid { grid-template-columns: minmax(0, 1fr); } }

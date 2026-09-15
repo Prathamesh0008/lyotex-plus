@@ -1,0 +1,15 @@
+.section { background: var(--color-grey); border-top: 1px solid var(--color-border); }
+.heading { display: flex; justify-content: space-between; align-items: flex-end; gap: 2rem; margin-bottom: 2.5rem; }
+.heading h2 { margin-top: 0.75rem; }
+.heading > a { flex-shrink: 0; }
+.layout { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 2fr); gap: 2.5rem; align-items: start; }
+.imageFrame { position: relative; aspect-ratio: 0.8; overflow: hidden; border-radius: 0.5rem 2rem 0.5rem 0.5rem; background: var(--color-border); }
+.imageFrame img { object-fit: cover; }
+.imageLabel { position: absolute; bottom: 0; left: 0; right: 0; padding: 2rem 1.5rem 1rem; background: linear-gradient(transparent, rgb(16 43 70 / 85%)); color: white; font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; }
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 2rem; }
+.product { border-top: 1px solid var(--color-border); padding-block: 1rem; }
+.product h3 { font-size: 0.9375rem; line-height: 1.6; letter-spacing: 0; text-wrap: initial; }
+.product a { display: inline-block; min-height: 44px; color: var(--color-navy); text-decoration: none; }
+.product a:hover { color: var(--color-blue); text-decoration: underline; text-underline-offset: 0.2em; }
+@media (max-width: 63.999rem) { .layout { grid-template-columns: minmax(0, 1fr); } .imageFrame { aspect-ratio: 2.2; } }
+@media (max-width: 39.999rem) { .heading { flex-direction: column; align-items: flex-start; } .grid { grid-template-columns: minmax(0, 1fr); } .imageFrame { aspect-ratio: 1.4; } }

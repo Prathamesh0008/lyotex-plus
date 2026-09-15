@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Lyotex Life Sciences
 
-## Getting Started
+Next.js App Router website with TypeScript. Includes Home, About, Services, Products, 12 product detail pages, Quality, and Contact.
 
-First, run the development server:
+## Run locally
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Install dependencies: npm ci
+- Development: npm run dev
+- Lint: npm run lint
+- Production build: npm run build
+- Serve production: npm start
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- app/: active App Router pages, shared layout, and global styling.
+- components/: shared site sections, header, footer, and contact form.
+- data/: company introduction and service content.
+- src/data/products.ts: the 12 product names, abbreviations, and slugs.
+- src/data/company.ts: supplied company address, phone numbers, and email.
+- src/app/products/[slug]/: product detail implementation, re-exported by the active route in app/products/[slug]/page.tsx.
+- public/images/: local optimized scientific imagery.
+- public/lyotex.svg: site logo.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The @/* alias resolves from the project root.
 
-## Learn More
+## Content and assets
 
-To learn more about Next.js, take a look at the following resources:
+Company and service content is based on https://www.lyotexlifesciences.in/index.html and its services page. Product names and contact details were supplied by the site owner. Scientific imagery is illustrative; it does not establish ownership of facilities or equipment. The About biologics illustration comes from the original site's images/biologics-image-1.jpg.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contact form limitation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The contact form validates entries in the browser only, as requested. It does not send or store messages and explicitly tells visitors this. Email sending requires a separately authorized backend integration. Phone and email links work directly; the location section links to Google Maps using the supplied address.
 
-## Deploy on Vercel
+## LAN development
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The current allowed development origin is 192.168.1.24. Update next.config.ts if the development computer's LAN IP changes.

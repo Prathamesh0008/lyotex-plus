@@ -1,0 +1,14 @@
+.section { background: var(--color-navy, #102b46); color: white; }
+.layout { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.2fr); gap: clamp(2rem, 5vw, 4rem); align-items: start; }
+.portrait { position: relative; aspect-ratio: 1.17; overflow: hidden; border-radius: 0.5rem; background: #193852; }
+.portrait img { object-fit: cover; object-position: center 30%; }
+.name { color: white; font-size: clamp(2rem, 4vw, 3rem); margin-block: 1.25rem 0.5rem; }
+.role { color: #a4d8d3; font-size: clamp(1rem, 1.6vw, 1.25rem); }
+.strengths { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.strength { background: #ffffff08; border: 1px solid #ffffff18; padding: clamp(1.25rem, 2.2vw, 2rem); }
+.marker { display: inline-flex; align-items: center; justify-content: center; width: 2.5rem; height: 2.5rem; border-radius: 50%; background: #a4d8d3; color: #102b46; font-size: 0.75rem; font-weight: 600; margin-bottom: 1.25rem; }
+.strength h3 { color: white; font-size: 1.125rem; line-height: 1.4; margin-bottom: 0.75rem; }
+.strength p { color: #d0dde6; font-size: 0.9375rem; line-height: 1.7; }
+.statement { color: #a4d8d3; text-align: center; margin-top: 2rem; font-style: italic; font-size: 0.9375rem; }
+@media (max-width: 47.999rem) { .layout { grid-template-columns: minmax(0, 1fr); } .portrait { max-width: 30rem; } }
+@media (max-width: 26.999rem) { .strengths { grid-template-columns: minmax(0, 1fr); } }

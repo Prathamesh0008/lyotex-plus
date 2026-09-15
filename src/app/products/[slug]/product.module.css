@@ -1,0 +1,11 @@
+.hero { background-color: var(--color-blue-light); background-image: radial-gradient(circle at 90% 30%, rgb(24 123 123 / 9%), transparent 40%); border-bottom: 1px solid var(--color-border); padding-block: 2rem clamp(3rem, 7vw, 6rem); }
+.breadcrumb { display: flex; flex-wrap: wrap; gap: 0.5rem 0.75rem; color: var(--color-muted); font-size: 0.8125rem; margin-bottom: clamp(2.5rem, 5vw, 4rem); }
+.breadcrumb > span:last-child { overflow-wrap: anywhere; }
+.content { max-width: 58rem; }
+.content h1 { font-size: clamp(2rem, 4.5vw, 4rem); margin-block: 1rem 2rem; }
+.identifier { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; border-left: 2px solid var(--color-teal); padding-left: 1rem; margin-bottom: 2.5rem; }
+.identifier dt { color: var(--color-muted); }
+.identifier dd { font-weight: 600; color: var(--color-navy); }
+.back { padding-block: 2rem 3rem; }
+.back a { display: inline-flex; align-items: center; gap: 0.75rem; min-height: 44px; font-weight: 600; font-size: 0.9375rem; }
+@media (max-width: 39.999rem) { .content > a { width: 100%; } }

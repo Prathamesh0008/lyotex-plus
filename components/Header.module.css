@@ -1,0 +1,27 @@
+.header { position: sticky; top: 0; z-index: 50; background: white; border-bottom: 1px solid var(--color-border); transition: background-color 180ms ease, box-shadow 180ms ease; }
+.scrolled { background: rgb(255 255 255 / 96%); backdrop-filter: blur(12px); box-shadow: 0 4px 20px rgb(16 43 70 / 8%); }
+.bar { min-height: 80px; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+.logo { display: inline-flex; align-items: center; gap: 0.6rem; color: var(--color-navy); text-decoration: none; flex-shrink: 0; }
+.logoImage { width: 170px; height: auto; }
+.contact { gap: 1rem; padding-inline: 1.25rem; }
+.nav { display: flex; align-items: center; gap: 2rem; }
+.links { display: flex; align-items: center; gap: 1.5rem; }
+.navLink { display: inline-flex; align-items: center; min-height: 44px; position: relative; color: var(--color-ink); font-size: 0.875rem; font-weight: 500; text-decoration: none; }
+.navLink:hover, .navLink[aria-current] { color: var(--color-blue); }
+.navLink[aria-current]::after { content: ""; position: absolute; bottom: 0; left: 0; right: 0; height: 2px; background: var(--color-teal); }
+.toggle { display: none; align-items: center; justify-content: center; width: 44px; height: 44px; border: 1px solid var(--color-border); border-radius: var(--radius-md); color: var(--color-navy); cursor: pointer; }
+.skipLink { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.skipLink:focus { top: 0.5rem; left: 1rem; width: auto; height: auto; padding: 0.5rem 1rem; clip-path: none; background: white; z-index: 60; }
+@media (max-width: 63.999rem) {
+  .bar { min-height: 76px; }
+  .logoImage { width: 156px; }
+  .ctaGroup { border-top: 1px solid var(--color-border); padding-top: 1.25rem; margin-top: 0.25rem; }
+  .contact { width: 100%; }
+  .toggle { display: flex; }
+  .nav { display: none; position: absolute; top: 100%; left: 0; right: 0; padding: 1rem var(--page-gutter) 1.5rem; background: white; border-bottom: 1px solid var(--color-border); box-shadow: var(--shadow-soft); max-height: calc(100dvh - 76px); overflow-y: auto; }
+  .nav.open { display: flex; flex-direction: column; align-items: stretch; gap: 1rem; }
+  .links { flex-direction: column; align-items: stretch; gap: 0.25rem; }
+  .navLink { display: flex; padding: 0.5rem 0.75rem; border-radius: var(--radius-sm); }
+  .navLink[aria-current] { background: var(--color-blue-light); }
+  .navLink[aria-current]::after { display: none; }
+}
