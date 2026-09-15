@@ -4,6 +4,8 @@ import Link from "next/link";
 import PageIntro from "@/components/PageIntro";
 import CoreCapabilities from "@/components/CoreCapabilities";
 import Founder from "@/components/Founder";
+import Reviews from "@/components/Reviews";
+import { reviews } from "@/src/data/reviews";
 import styles from "./about.module.css";
 
 const baseMetadata = createPageMetadata("/about");
@@ -28,6 +30,8 @@ export default function AboutPage() {
   return (
     <>
       <PageIntro title="About Lyotex Life Sciences" description="Expertise in biopharmaceutical development, brought together across research, manufacturing, quality, and technology transfer." />
+      <Founder />
+      <Reviews reviews={reviews} />
       <section className="section" aria-labelledby="overview-heading">
         <div className={"site-container " + styles.row}>
           <div className={styles.copy}>
@@ -52,7 +56,6 @@ export default function AboutPage() {
           </div>
         </section>
       ))}</div>
-      <Founder />
       <section className={"section " + styles.cta} aria-labelledby="about-contact-heading">
         <div className={"site-container " + styles.ctaContent}><div><h2 id="about-contact-heading">Discuss your next project</h2><p>Connect with Lyotex Life Sciences about your development and technology-transfer requirements.</p></div><Link href="/contact" className="btn btn--primary btn--large">Contact Our Team <span aria-hidden="true">&rarr;</span></Link></div>
       </section>

@@ -1,0 +1,18 @@
+.section { background: var(--color-blue-light, #f0f7fc); }
+.demoNote { color: var(--color-muted); font-size: 0.9375rem; margin-bottom: 1.5rem; }
+.demoPortrait { display: grid; place-items: center; aspect-ratio: 1.8; border-radius: 45%; margin-bottom: 1.5rem; background: #e5eff5; color: #7197ae; overflow: hidden; }
+.card:nth-child(2) .demoPortrait { background: #e3f1ee; color: #638f88; }
+.card:nth-child(3) .demoPortrait { background: #e9edf6; color: #7c8ea9; }
+.heading { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 2rem; }
+.controls { display: flex; gap: 0.5rem; }
+.controls button { display: grid; place-items: center; width: 44px; height: 44px; border: 1px solid var(--color-border); border-radius: 50%; background: white; color: var(--color-blue); font-size: 1.5rem; cursor: pointer; }
+.controls button:disabled { opacity: 0.4; cursor: default; }
+.track { position: relative; display: grid; grid-auto-flow: column; grid-auto-columns: calc((100% - 3rem) / 3); gap: 1.5rem; overflow-x: auto; scroll-snap-type: x mandatory; padding-block: 0.25rem 1.5rem; }
+.card { min-width: 0; padding: clamp(1.25rem, 2vw, 2rem); border-radius: 1rem; background: white; box-shadow: 0 8px 18px #102b4608; scroll-snap-align: start; overflow-wrap: anywhere; }
+.photo { position: relative; aspect-ratio: 1.8; overflow: hidden; border-radius: 45%; margin-bottom: 1.5rem; }
+.photo img { object-fit: cover; }
+.card h3 { font-size: 1.125rem; }
+.role { color: var(--color-teal); font-size: 0.875rem; margin-top: 0.5rem; }
+.card blockquote { margin: 1.25rem 0 0; color: var(--color-ink); line-height: 1.8; }
+@media (max-width: 63.999rem) { .track { grid-auto-columns: calc((100% - 1.5rem) / 2); } }
+@media (max-width: 39.999rem) { .track { grid-auto-columns: 100%; } }
