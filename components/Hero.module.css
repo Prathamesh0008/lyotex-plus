@@ -1,5 +1,5 @@
-.hero { background: linear-gradient(110deg, #fff 48%, #f2f8fc); padding-block: clamp(2rem, 4vw, 4rem) clamp(3rem, 5vw, 5rem); border-bottom: 1px solid #e1ecf4; overflow: clip; }
-.grid { display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(0, 1fr); align-items: center; gap: clamp(2rem, 4vw, 4rem); }
+.hero { position: relative; isolation: isolate; background: linear-gradient(120deg, #fbfdff, #f7fbff 65%, #f4faff); padding-block: clamp(1.5rem, 2.5vw, 2.5rem) clamp(3rem, 5vw, 5rem); border-bottom: 1px solid #e1ecf4; overflow: clip; }
+.grid { display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(0, 1fr); align-items: start; gap: clamp(2rem, 4vw, 4rem); }
 .content { min-width: 0; }
 .content h1 { font-size: clamp(2.25rem, 3.3vw, 3.125rem); line-height: 1.14; letter-spacing: -0.045em; font-weight: 600; text-wrap: initial; }
 .content h1 > span { display: block; margin-top: 1rem; color: #1774b6; font-weight: 400; font-size: .87em; line-height: 1.2; letter-spacing: -0.03em; }
@@ -9,8 +9,7 @@
 .contact:hover { text-decoration: underline; }
 .expertise { display: flex; flex-wrap: wrap; gap: 1rem 1.25rem; padding-top: 1.5rem; margin-top: 2rem; border-top: 1px solid #dce8f2; }
 .expertise li { display: flex; align-items: center; gap: .625rem; font-size: .75rem; line-height: 1.5; color: #36556f; }
-.visual { position: relative; min-width: 0; padding: 4rem 0 2.25rem 1.25rem; }
-.molecule { position: absolute; width: 68%; right: -1rem; top: -1.5rem; opacity: .85; }
+.visual { position: relative; min-width: 0; padding: 0 0 2.25rem 1.25rem; }
 .lab { position: relative; margin-left: 1.5rem; background: #fff; border: 1px solid #dbe7f0; border-radius: 5rem .75rem .75rem .75rem; overflow: hidden; box-shadow: 0 22px 55px #16486b16; }
 .labImage { position: relative; aspect-ratio: 1.05; }
 .labImage img { object-fit: cover; object-position: 57% center; }
@@ -22,15 +21,14 @@
 @media (max-width: 63.999rem) {
   .grid { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
   .content { max-width: 42rem; }
-  .visual { grid-row: 1; width: min(100%, 36rem); margin-inline: auto; padding-top: 3rem; }
+  .visual { grid-row: 1; width: min(100%, 36rem); margin-inline: auto; padding-top: 0; }
   .content h1 { font-size: clamp(2.25rem, 5.5vw, 3.25rem); }
   .labImage { aspect-ratio: 1.5; }
   .researcher { width: 26%; }
-  .molecule { width: 50%; top: -1rem; }
 }
 @media (max-width: 39.999rem) {
   .hero { background: #fff; padding-top: 1rem; }
-  .visual { padding: 2.5rem 0 1rem; }
+  .visual { padding: 0 0 1rem; }
   .lab { margin-left: .75rem; border-top-left-radius: 3rem; }
   .labImage { aspect-ratio: 1.55; }
   .lab figcaption { padding: .875rem 1rem .875rem 5.5rem; min-height: 4.75rem; }
@@ -44,3 +42,9 @@
   .expertise { gap: 1rem; }
   .expertise li { font-size: .6875rem; gap: .5rem; }
 }
+
+.artwork { position: absolute; inset: 0; z-index: -1; pointer-events: none; overflow: hidden; }
+.artwork > svg { width: 100%; height: 100%; }
+.dnaArtwork { position: absolute; top: 0; left: 0; width: 38%; height: 100%; background: linear-gradient(90deg, transparent, #69b6ea 70%); opacity: .22; transform: scaleX(-1); mask-image: url('/images/footer-dna-background.png'); mask-mode: luminance; mask-repeat: no-repeat; mask-size: auto 150%; mask-position: right top; }
+@media (max-width: 63.999rem) { .artwork { bottom: auto; height: 36rem; } .dnaArtwork { width: 55%; opacity: .22; } }
+@media (max-width: 39.999rem) { .artwork { height: 25rem; } .artwork > svg { width: 180%; margin-left: -80%; } .dnaArtwork { width: 65%; opacity: .22; } }
