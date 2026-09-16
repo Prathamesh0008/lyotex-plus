@@ -1,36 +1,46 @@
-.hero { padding-block: clamp(3rem, 6vw, 6rem); background: linear-gradient(115deg, #fff 35%, #f4f8fa 100%); overflow: hidden; }
-.grid { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(0, 1fr); align-items: center; gap: clamp(2rem, 5vw, 5rem); }
-.content { padding-block: 1rem; }
-.eyebrow { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.75rem; }
-.eyebrow > span { flex-shrink: 0; width: 1.75rem; height: 2px; background: var(--color-teal); }
-.heading { font-size: clamp(2.5rem, 3.8vw, 3.75rem); line-height: 1.12; letter-spacing: -0.04em; text-wrap: initial; }
-.heading span { display: block; color: var(--color-blue); font-weight: 400; margin-top: 0.25rem; }
-.description { max-width: 52ch; color: var(--color-muted); font-size: 1.0625rem; line-height: 1.8; margin-top: 1.75rem; }
-.actions { margin-top: 2rem; gap: 0.75rem; }
-.footnote { display: flex; align-items: center; gap: 0.65rem; margin-top: 2rem; color: var(--color-muted); font-size: 0.8125rem; }
-.footnote > span { width: 6px; height: 6px; background: var(--color-teal); border-radius: 50%; }
-.visual { position: relative; min-width: 0; }
-.visual::before { content: ""; position: absolute; inset: -1rem -1rem 3rem 2rem; border: 1px solid var(--color-border); border-radius: 0.75rem 4rem 0.75rem 0.75rem; }
-.imageFrame { position: relative; aspect-ratio: 0.91; overflow: hidden; border-radius: 0.5rem 3rem 0.5rem 0.5rem; background: var(--color-grey); }
-.image { object-fit: cover; object-position: 57% center; }
-.imageShade { position: absolute; inset: 0; background: linear-gradient(180deg, transparent 60%, rgb(16 43 70 / 80%)); }
-.imageLabel { position: absolute; bottom: 1.75rem; left: 1.75rem; right: 1rem; display: flex; align-items: center; gap: 0.75rem; color: white; font-size: 0.75rem; letter-spacing: 0.09em; text-transform: uppercase; }
-.imageLabel > span { height: 1px; width: 1.5rem; background: #8dd5cc; }
-.caption { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-top: 1.25rem; color: var(--color-muted); font-size: 0.6875rem; }
-.captionNumber { flex-shrink: 0; color: var(--color-teal); letter-spacing: 0.12em; }
-.caption > span:last-child { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.hero { background: linear-gradient(110deg, #fff 48%, #f2f8fc); padding-block: clamp(2rem, 4vw, 4rem) clamp(3rem, 5vw, 5rem); border-bottom: 1px solid #e1ecf4; overflow: clip; }
+.grid { display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(0, 1fr); align-items: center; gap: clamp(2rem, 4vw, 4rem); }
+.content { min-width: 0; }
+.content h1 { font-size: clamp(2.25rem, 3.3vw, 3.125rem); line-height: 1.14; letter-spacing: -0.045em; font-weight: 600; text-wrap: initial; }
+.content h1 > span { display: block; margin-top: 1rem; color: #1774b6; font-weight: 400; font-size: .87em; line-height: 1.2; letter-spacing: -0.03em; }
+.description { max-width: 48ch; margin-top: 1.5rem; color: #465c72; font-size: 1.0625rem; line-height: 1.8; }
+.actions { display: flex; align-items: center; flex-wrap: wrap; gap: 1rem 1.5rem; margin-top: 1.75rem; }
+.contact { display: inline-flex; align-items: center; justify-content: center; gap: .875rem; min-height: 48px; color: #173c60; text-decoration: none; font-size: .9375rem; font-weight: 600; }
+.contact:hover { text-decoration: underline; }
+.expertise { display: flex; flex-wrap: wrap; gap: 1rem 1.25rem; padding-top: 1.5rem; margin-top: 2rem; border-top: 1px solid #dce8f2; }
+.expertise li { display: flex; align-items: center; gap: .625rem; font-size: .75rem; line-height: 1.5; color: #36556f; }
+.visual { position: relative; min-width: 0; padding: 4rem 0 2.25rem 1.25rem; }
+.molecule { position: absolute; width: 68%; right: -1rem; top: -1.5rem; opacity: .85; }
+.lab { position: relative; margin-left: 1.5rem; background: #fff; border: 1px solid #dbe7f0; border-radius: 5rem .75rem .75rem .75rem; overflow: hidden; box-shadow: 0 22px 55px #16486b16; }
+.labImage { position: relative; aspect-ratio: 1.05; }
+.labImage img { object-fit: cover; object-position: 57% center; }
+.lab figcaption { display: flex; flex-direction: column; gap: .25rem; background: #102f4c; color: #fff; padding: 1.125rem 1.5rem 1.125rem 32%; min-height: 5.5rem; }
+.lab figcaption > span:first-child { font-weight: 600; font-size: .9375rem; }
+.lab figcaption > span:last-child { color: #c6dded; font-size: .75rem; }
+.researcher { position: absolute; width: 30%; aspect-ratio: 1; left: 0; bottom: .75rem; border: 6px solid white; border-radius: .75rem; overflow: hidden; box-shadow: 0 8px 30px #1c47602b; }
+.researcher img { object-fit: cover; }
 @media (max-width: 63.999rem) {
-  .grid { grid-template-columns: minmax(0, 1fr); gap: 3rem; }
+  .grid { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
   .content { max-width: 42rem; }
-  .heading { font-size: clamp(2.5rem, 6vw, 3.75rem); }
-  .imageFrame { aspect-ratio: 1.5; }
-  .visual { max-width: 44rem; width: 100%; }
+  .visual { grid-row: 1; width: min(100%, 36rem); margin-inline: auto; padding-top: 3rem; }
+  .content h1 { font-size: clamp(2.25rem, 5.5vw, 3.25rem); }
+  .labImage { aspect-ratio: 1.5; }
+  .researcher { width: 26%; }
+  .molecule { width: 50%; top: -1rem; }
 }
 @media (max-width: 39.999rem) {
-  .eyebrow { font-size: 0.6875rem; margin-bottom: 1.25rem; }
-  .heading { font-size: clamp(2.125rem, 8.5vw, 3rem); }
-  .imageFrame { aspect-ratio: 1.08; }
-  .caption { align-items: flex-start; }
-  .captionNumber { display: none; }
-  .imageLabel { left: 1.25rem; bottom: 1.25rem; font-size: 0.625rem; }
+  .hero { background: #fff; padding-top: 1rem; }
+  .visual { padding: 2.5rem 0 1rem; }
+  .lab { margin-left: .75rem; border-top-left-radius: 3rem; }
+  .labImage { aspect-ratio: 1.55; }
+  .lab figcaption { padding: .875rem 1rem .875rem 5.5rem; min-height: 4.75rem; }
+  .lab figcaption > span:first-child { font-size: .8125rem; }
+  .lab figcaption > span:last-child { font-size: .6875rem; }
+  .researcher { width: 25%; border-width: 4px; bottom: .5rem; }
+  .content h1 { font-size: clamp(1.875rem, 7.5vw, 2.75rem); }
+  .desktopBreak { display: none; }
+  .description { font-size: 1rem; }
+  .actions { align-items: stretch; flex-direction: column; gap: .5rem; }
+  .expertise { gap: 1rem; }
+  .expertise li { font-size: .6875rem; gap: .5rem; }
 }

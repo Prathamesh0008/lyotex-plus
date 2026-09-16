@@ -1,0 +1,7 @@
+.art { pointer-events: none; width: 100%; }
+.art svg { display: block; width: 100%; height: auto; }
+.molecule { max-width: 24rem; }
+.quality { max-width: 22rem; }
+.process { height: 5rem; overflow: hidden; }
+.process svg { height: 100%; width: 100%; }
+.conversation { max-width: 16rem; }

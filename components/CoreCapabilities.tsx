@@ -1,4 +1,5 @@
 import { coreCapabilities } from "@/data/capabilities";
+import CapabilityIcon from "./CapabilityIcon";
 import styles from "./CoreCapabilities.module.css";
 
 export default function CoreCapabilities() {
@@ -7,16 +8,12 @@ export default function CoreCapabilities() {
       <div className="site-container">
         <div className={styles.heading}>
           
-          <h2 id="capabilities-heading">Core Capabilities</h2>
+          <h2 className="science-title" id="capabilities-heading">Core Capabilities</h2>
         </div>
         <ul className={styles.list}>
-          {coreCapabilities.map(({ name, iconPath }) => (
+          {coreCapabilities.map(({ name }) => (
             <li key={name} className={styles.item}>
-              <svg className={styles.icon} width="28" height="28" viewBox="0 0 24 24"
-                fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"
-                strokeLinejoin="round" aria-hidden="true" focusable="false">
-                <path d={iconPath} />
-              </svg>
+              <CapabilityIcon name={name} />
               <h3>{name}</h3>
             </li>
           ))}

@@ -1,4 +1,5 @@
 import { createPageMetadata } from "@/data/seo";
+import ScienceIcon from "@/components/ScienceIcon";
 import PageIntro from "@/components/PageIntro";
 import ContactForm from "@/components/ContactForm";
 import { company } from "@/src/data/company";
@@ -14,9 +15,9 @@ export default function ContactPage() {
         
         <h2>{company.name}</h2>
         <address>
-          <div className={styles.detail}><h3>Office address</h3><p>{company.address}</p></div>
-          <div className={styles.detail}><h3>Call us</h3>{company.mobile.map(number => <a key={number} href={`tel:+91${number}`}>{number}</a>)}</div>
-          <div className={styles.detail}><h3>Email us</h3><a href={`mailto:${company.email}`}>{company.email}</a></div>
+          <div className={styles.detail}><ScienceIcon name="pin" small /><h3>Office address</h3><p>{company.address}</p></div>
+          <div className={styles.detail}><ScienceIcon name="phone" small /><h3>Call us</h3>{company.mobile.map(number => <a key={number} href={`tel:+91${number}`}>{number}</a>)}</div>
+          <div className={styles.detail}><ScienceIcon name="mail" small /><h3>Email us</h3><a href={`mailto:${company.email}`}>{company.email}</a></div>
         </address>
       </div>
       <ContactForm />

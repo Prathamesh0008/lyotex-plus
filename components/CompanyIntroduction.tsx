@@ -24,7 +24,7 @@ export default function CompanyIntroduction() {
         </div>
         <div className={styles.content}>
           
-          <h2 id="company-heading">{companyIntroduction.heading}</h2>
+          <h2 className="science-title" id="company-heading">{companyIntroduction.heading}</h2>
           <div className={styles.description}>
             {companyIntroduction.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
           </div>

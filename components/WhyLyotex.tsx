@@ -1,4 +1,5 @@
 import { strengths } from "@/data/strengths";
+import ScienceIcon, { type ScienceIconName } from "./ScienceIcon";
 import styles from "./WhyLyotex.module.css";
 
 export default function WhyLyotex() {
@@ -7,12 +8,12 @@ export default function WhyLyotex() {
       <div className="site-container">
         <div className={styles.heading}>
           
-          <h2 id="why-heading">Why Lyotex</h2>
+          <h2 className="science-title" id="why-heading">Why Lyotex</h2>
         </div>
         <ul className={styles.grid}>
-          {strengths.map((strength) => (
+          {strengths.map((strength, index) => (
             <li key={strength.title}>
-              <span className={styles.accent} aria-hidden="true" />
+              <ScienceIcon name={(["people", "manufacturing", "transfer", "growth"] as ScienceIconName[])[index]} />
               <h3>{strength.title}</h3>
               <p>{strength.description}</p>
             </li>

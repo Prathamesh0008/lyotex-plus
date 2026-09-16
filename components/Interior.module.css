@@ -1,4 +1,4 @@
-.intro { background: var(--color-blue-light); padding-block: 2rem 4rem; border-bottom: 1px solid var(--color-border); }
+.intro { background: #f5f9fc;  padding-block: 2rem 4rem; border-bottom: 1px solid var(--color-border); }
 .intro nav { font-size: 0.8125rem; color: var(--color-muted); margin-bottom: 3rem; }
 .intro h1 { margin-block: 0.75rem 1.25rem; }
 .lead { max-width: 60ch; font-size: 1.125rem; color: var(--color-muted); }
@@ -9,16 +9,17 @@
 .row { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); align-items: center; gap: clamp(2rem, 6vw, 6rem); }
 .detail:nth-child(even) .visual { order: -1; }
 @media (min-width: 48rem) { .detail:nth-child(even) .row:has(> .visual) { grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr); } }
-.visual { position: relative; aspect-ratio: 1.2; overflow: hidden; border-radius: 0.5rem 2.5rem 0.5rem 0.5rem; background: var(--color-grey); }
+.visual { position: relative; aspect-ratio: 1.2; overflow: hidden; border-radius: 1rem 2.5rem 1rem 1rem; box-shadow: var(--shadow-soft); background: var(--color-grey); }
 .visual img { object-fit: cover; }
-.copy h2 { font-size: clamp(1.75rem, 3vw, 2.75rem); margin-block: 0.75rem 1.25rem; }
+.copy > span:first-child { margin-bottom: 1.25rem; }
+.copy h2 { font-size: clamp(1.75rem, 3vw, 2.75rem); margin-block: 0 1.25rem; }
 .copy p { color: var(--color-muted); }
 .copy h3 { font-size: 0.875rem; margin-top: 1.75rem; }
 .copy > h3:first-child { margin-top: 0; }
 .copy ul { margin-block: 1rem 1.5rem; padding-left: 1.25rem; list-style: disc; color: var(--color-ink); }
 .copy li { padding-block: 0.25rem; }
 .values { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 3rem; }
-.values h2 { margin-block: 0.75rem 1rem; }
+.values h2 { margin-block: 0 1rem; }
 .values p { color: var(--color-muted); }
 .values article { border-top: 2px solid var(--color-teal); padding-top: 1.5rem; }
 @media (max-width: 47.999rem) { .row, .values { grid-template-columns: minmax(0, 1fr); } .detail:nth-child(even) .visual { order: initial; } .intro { padding-bottom: 3rem; } .intro nav { margin-bottom: 2rem; } }

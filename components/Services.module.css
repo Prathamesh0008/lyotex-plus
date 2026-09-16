@@ -1,27 +1,35 @@
-.heading {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 2rem;
-  margin-bottom: 2.75rem;
-}
-
-.heading h2 { margin-top: 0.75rem; }
-.contact { flex-shrink: 0; }
-.list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: 2.5rem; }
-.item { display: flex; align-items: flex-start; gap: 1rem; padding-block: 1.5rem; border-top: 1px solid var(--color-border); }
-.number { color: var(--color-teal); font-size: 0.75rem; line-height: 1.75rem; font-variant-numeric: tabular-nums; }
-.item h3 { font-size: 1.0625rem; line-height: 1.6; letter-spacing: -0.01em; text-wrap: initial; }
-.item h3 a { display: inline-flex; align-items: center; min-height: 44px; color: var(--color-navy); text-decoration: none; }
-.item h3 a:hover { color: var(--color-blue); text-decoration: underline; }
-.item p { margin-top: 0.375rem; color: var(--color-muted); font-size: 0.875rem; line-height: 1.6; }
-
+.section { border-block: 1px solid var(--color-border); }
+.heading { display: flex; align-items: center; justify-content: space-between; gap: 2rem; margin-bottom: 2.25rem; }
+.heading p { margin-top: 0.875rem; color: var(--color-ink); max-width: 58ch; font-size: 1rem; }
+.heading > a { flex-shrink: 0; }
+.layout { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.35fr); gap: 2.5rem; align-items: stretch; }
+.visual { position: relative; min-height: 26rem; overflow: hidden; border-radius: 1rem; box-shadow: var(--shadow-soft); background: var(--color-border); }
+.visual img { object-fit: cover; }
+.list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 1.75rem; }
+.list li { min-width: 0; border-bottom: 1px solid #cedae4; }
+.list li:nth-child(-n + 2) { border-top: 1px solid #cedae4; }
+.service { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; height: 100%; min-height: 4.5rem; padding-block: 1.125rem; text-decoration: none; color: var(--color-navy); }
+.service h3 { flex: 1; font-size: 1rem; font-weight: 600; line-height: 1.5; letter-spacing: -0.01em; text-wrap: initial; }
+.service > span:last-child { flex-shrink: 0; color: var(--color-blue); font-size: 1.125rem; }
+.service:hover h3 { color: var(--color-blue); text-decoration: underline; text-underline-offset: 0.2em; }
+.project { color: var(--color-blue); font-size: 0.9375rem; font-weight: 600; }
+.project:hover { text-decoration: underline; }
 @media (max-width: 63.999rem) {
-  .list { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 2rem; }
+  .layout { grid-template-columns: minmax(0, 1fr); gap: 1.75rem; }
+  .visual { min-height: 0; aspect-ratio: 2.2; }
 }
-
 @media (max-width: 39.999rem) {
-  .heading { flex-direction: column; align-items: flex-start; gap: 1.5rem; margin-bottom: 2rem; }
-  .list { grid-template-columns: minmax(0, 1fr); }
-  .item { padding-block: 1.25rem; }
+  .heading { flex-direction: column; align-items: flex-start; gap: 1.25rem; margin-bottom: 1.75rem; }
+  .heading p { font-size: 0.9375rem; }
+  .visual { aspect-ratio: 1.6; }
+  .list { column-gap: 1rem; }
+  .service { gap: 0.5rem; min-height: 5rem; padding-block: 1rem; }
+  .service h3, .project { font-size: 0.875rem; }
 }
+/* The photograph and process diagram occupy their own column, away from copy. */
+.visualColumn { display: flex; flex-direction: column; gap: 1rem; min-width: 0; }
+.visualColumn .visual { flex: 1; min-height: 20rem; }
+.process { background: #f2f8fc; border-radius: .75rem; padding: .25rem 1rem .875rem; }
+.process p { display: grid; grid-template-columns: repeat(3, 1fr); text-align: center; font-size: .75rem; color: #3c5d76; }
+.section { background: #fff; }
+@media (max-width: 63.999rem) { .visualColumn .visual { min-height: 0; flex: auto; } }

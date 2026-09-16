@@ -1,11 +1,8 @@
 import { createPageMetadata } from "@/data/seo";
 import Image from "next/image";
 import Link from "next/link";
-import PageIntro from "@/components/PageIntro";
 import CoreCapabilities from "@/components/CoreCapabilities";
 import Founder from "@/components/Founder";
-import Reviews from "@/components/Reviews";
-import { reviews } from "@/src/data/reviews";
 import styles from "./about.module.css";
 
 const baseMetadata = createPageMetadata("/about");
@@ -29,9 +26,8 @@ const areas = [
 export default function AboutPage() {
   return (
     <>
-      <PageIntro title="About Lyotex Life Sciences" description="Expertise in biopharmaceutical development, brought together across research, manufacturing, quality, and technology transfer." />
+      <h1 className="sr-only">About Lyotex Life Sciences</h1>
       <Founder />
-      <Reviews reviews={reviews} />
       <section className="section" aria-labelledby="overview-heading">
         <div className={"site-container " + styles.row}>
           <div className={styles.copy}>

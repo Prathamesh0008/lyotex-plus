@@ -1,12 +1,12 @@
 .overview { border-bottom: 1px solid var(--color-border); }
 .overviewGrid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); gap: clamp(2rem, 6vw, 5rem); align-items: center; }
-.overviewGrid h2 { font-size: clamp(1.75rem, 3vw, 2.75rem); margin-block: 1rem 1.25rem; }
+.overviewGrid h2 { font-size: clamp(1.75rem, 3vw, 2.75rem); margin-block: 0 1.25rem; }
 .overviewGrid > div > p:last-child { color: var(--color-muted); line-height: 1.85; }
 .image { position: relative; aspect-ratio: 1.6; overflow: hidden; border-radius: 0.5rem 2rem 0.5rem 0.5rem; background: var(--color-grey); }
 .image img { object-fit: cover; }
-.cta { background: var(--color-teal-light); }
+.cta { background: #f2f7fb; border-top: 1px solid var(--color-border); }
 .ctaContent { display: flex; justify-content: space-between; align-items: center; gap: 3rem; }
-.ctaContent h2 { margin-block: 1rem; max-width: 25ch; }
+.ctaContent h2 { margin-block: 0 1rem; max-width: 25ch; }
 .ctaContent > div > p:last-child { max-width: 55ch; color: var(--color-muted); }
 .ctaContent > a { flex-shrink: 0; }
 @media (max-width: 47.999rem) { .overviewGrid { grid-template-columns: minmax(0, 1fr); } .ctaContent { flex-direction: column; align-items: stretch; } }

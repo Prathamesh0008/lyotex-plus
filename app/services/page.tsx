@@ -1,7 +1,7 @@
 import { createPageMetadata } from "@/data/seo";
+import ScienceIcon, { serviceIcons } from "@/components/ScienceIcon";
 import Image from "next/image";
 import Link from "next/link";
-import PageIntro from "@/components/PageIntro";
 import { serviceDetails, serviceImageAlt } from "@/data/serviceDetails";
 import styles from "@/components/Interior.module.css";
 import pageStyles from "./services.module.css";
@@ -26,13 +26,12 @@ const services = [
 
 export default function ServicesPage() {
   return <>
-    <PageIntro title="Services" description="Biopharmaceutical development services, from product selection and process development to technical transfer and regulatory support." />
-    <nav className={`site-container ${styles.jump}`} aria-label="Service sections">{services.map(s => <a key={s.id} href={`#${s.id}`}>{s.title}</a>)}</nav>
-    <div>{services.map((service) => {
+    <h1 className="sr-only">Services</h1>
+    <div className={pageStyles.sections}>{services.map((service) => {
       const detail = serviceDetails[service.id];
       return <section key={service.id} id={service.id} className={styles.detail} aria-labelledby={`${service.id}-heading`}>
         <div className={`site-container ${styles.row}`}>
-          <div className={styles.copy}><h2 id={`${service.id}-heading`}>{service.title}</h2><p>{detail.description}</p><h3>Key capabilities</h3><ul>{detail.capabilities.map(c => <li key={c}>{c}</li>)}</ul></div>
+          <div className={styles.copy}><ScienceIcon name={serviceIcons[service.id]} /><h2 id={`${service.id}-heading`}>{service.title}</h2><p>{detail.description}</p><h3>Key capabilities</h3><ul>{detail.capabilities.map(c => <li key={c}>{c}</li>)}</ul></div>
           <div className={styles.visual}><Image src={detail.image === 10 ? "/images/product-3.webp" : detail.image === 11 ? "/images/product-1.webp" : `/images/service-${detail.image}.webp`} alt={serviceImageAlt[detail.image]} fill loading="lazy" sizes="(min-width: 1280px) 470px, (min-width: 768px) 40vw, calc(100vw - 40px)" /></div>
         </div>
       </section>;

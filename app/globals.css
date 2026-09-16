@@ -7,12 +7,12 @@
   --color-blue: #1763aa;
   --color-blue-dark: #114c85;
   --color-blue-light: #edf5fc;
-  --color-grey: #f4f6f8;
-  --color-border: #dce4eb;
+  --color-grey: #f5f9fd;
+  --color-border: #dce8f2;
   --color-ink: #33475b;
-  --color-muted: #5c6f80;
-  --color-teal: #187b7b;
-  --color-teal-light: #edf7f6;
+  --color-muted: #4d6279;
+  --color-teal: #117fbd;
+  --color-teal-light: #eef7fe;
 
   --font-sans: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   --font-heading: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
@@ -129,7 +129,7 @@
     color: var(--color-white);
   }
 
-  .section--navy :where(h1, h2, h3, h4, h5, h6, .eyebrow, .body-lead, .body-small, a:not(.btn)) {
+  .section--navy :where(h1, h2, h3, h4, h5, h6, .body-lead, .body-small, a:not(.btn)) {
     color: inherit;
   }
 
@@ -139,15 +139,6 @@
 
   .section-heading { max-width: 48rem; }
   .section-heading > * + * { margin-block-start: 1rem; }
-
-  .eyebrow {
-    color: var(--color-teal);
-    font-size: 0.75rem;
-    font-weight: 600;
-    letter-spacing: 0.14em;
-    line-height: 1.5;
-    text-transform: uppercase;
-  }
 
   .body-lead {
     max-width: 60ch;
@@ -190,7 +181,8 @@
   }
 
   .btn--primary {
-    background: var(--color-blue);
+    background: linear-gradient(125deg, #1264ad, #087ec2);
+    box-shadow: 0 5px 14px rgb(23 99 170 / 13%);
     color: var(--color-white);
   }
 
@@ -242,3 +234,4 @@
     scroll-behavior: auto !important;
   }
 }
+.science-title::after { content: ""; display: block; width: 2.75rem; height: 3px; border-radius: 3px; margin-top: 1rem; background: linear-gradient(90deg, #0075d5, #23bae8); }

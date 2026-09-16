@@ -1,5 +1,4 @@
 import { createPageMetadata } from "@/data/seo";
-import PageIntro from "@/components/PageIntro";
 import Image from "next/image";
 import Link from "next/link";
 import { qualityDetails as sourceTopics } from "@/data/qualityDetails";
@@ -16,7 +15,7 @@ const qualityDetails = sourceTopics.map(topic => ({
 
 export default function QualityPage() {
   return <>
-    <PageIntro title="Quality" description="Quality systems, analytical work, documentation, and technology transfer support Lyotex’s biopharmaceutical development services." />
+    <h1 className="sr-only">Quality</h1>
     <section className={`section section--compact ${pageStyles.overview}`} aria-labelledby="quality-approach-heading">
       <div className={`site-container ${pageStyles.overviewGrid}`}>
         <div><h2 id="quality-approach-heading">Quality across development</h2><p>Lyotex brings together research, manufacturing, quality, regulatory, and cGMP expertise. Its approach to technology transfer emphasizes careful execution and continual improvement where needed.</p></div>

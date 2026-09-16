@@ -4,7 +4,7 @@
 .imageFrame { position: relative; aspect-ratio: 1; overflow: hidden; border-radius: 0.5rem 0.5rem 3rem 0.5rem; background: var(--color-grey); }
 .image { object-fit: cover; }
 .imageAccent { position: absolute; right: 0; bottom: 0; width: 40%; height: 35%; border-right: 2px solid var(--color-teal); border-bottom: 2px solid var(--color-teal); border-bottom-right-radius: 3.5rem; }
-.content h2 { margin-top: 1rem; max-width: 18ch; font-size: clamp(2rem, 3.3vw, 3rem); }
+.content h2 { margin-top: 0; max-width: 18ch; font-size: clamp(2rem, 3.3vw, 3rem); }
 .description { margin-top: 1.75rem; color: var(--color-muted); font-size: 1.0625rem; line-height: 1.8; }
 .description p + p { margin-top: 1.25rem; }
 .link { display: inline-flex; align-items: center; gap: 1.25rem; min-height: 44px; margin-top: 1.75rem; font-size: 0.9375rem; font-weight: 600; text-decoration: none; border-bottom: 1px solid var(--color-border); }

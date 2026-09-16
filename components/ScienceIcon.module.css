@@ -1,0 +1,4 @@
+.badge { display: inline-grid; place-items: center; width: 3.75rem; height: 3.75rem; flex-shrink: 0; border: 1px solid #d3eafb; border-radius: 50%; color: #0874bd; background: radial-gradient(circle at 30% 20%, #f8fdff, #e1f2fe 65%, #d4eafd); box-shadow: inset 0 1px 1px white, 0 5px 15px #187ec00a; }
+.badge svg { width: 48%; height: 48%; filter: drop-shadow(0 1px 0 #fff); }
+.small { width: 2.5rem; height: 2.5rem; }
+@media (max-width: 39.999rem) { .badge { width: 3.25rem; height: 3.25rem; } .small { width: 2rem; height: 2rem; } }
