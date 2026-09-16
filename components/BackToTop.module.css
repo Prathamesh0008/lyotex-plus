@@ -1,0 +1,6 @@
+.button { position: fixed; right: max(1.5rem, env(safe-area-inset-right)); bottom: calc(1.5rem + env(safe-area-inset-bottom)); z-index: 40; display: grid; place-items: center; width: 48px; height: 48px; border: 1px solid #ffffff80; border-radius: 50%; background: linear-gradient(135deg, #167bc0, #07569d); color: white; box-shadow: 0 5px 18px #134e7933; cursor: pointer; transition: transform 160ms ease, box-shadow 160ms ease; }
+.button[hidden] { display: none; }
+.button:hover { transform: translateY(-3px); box-shadow: 0 8px 22px #134e794d; }
+.button:focus-visible { outline: 3px solid #1599de; outline-offset: 4px; }
+@media (max-width: 39.999rem) { .button { right: max(1rem, env(safe-area-inset-right)); bottom: calc(1rem + env(safe-area-inset-bottom)); } }
+@media (prefers-reduced-motion: reduce) { .button { transition: none; } }

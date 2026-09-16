@@ -34,7 +34,7 @@ export default function Hero() {
       </div>
       <div className={styles.visual}>
         <figure className={styles.lab}>
-          <div className={styles.labImage}><Image src={laboratory} alt="Analytical instruments and workstations in a biotechnology laboratory" fill preload placeholder="blur" sizes="(min-width: 1280px) 475px, (min-width: 1024px) 40vw, (min-width: 640px) 70vw, 86vw"/></div>
+          <div className={styles.labImage}><Image src={laboratory} alt="Analytical instruments and workstations in a biotechnology laboratory" fill loading="eager" fetchPriority="high" sizes="(min-width: 1280px) 475px, (min-width: 1024px) 40vw, (min-width: 640px) 70vw, 86vw"/></div>
           <figcaption><span>Science with purpose.</span><span>Expertise at every stage.</span></figcaption>
         </figure>
         <div className={styles.researcher}><Image src={researcher} alt="Researcher using a pipette at a laboratory bench" fill placeholder="blur" sizes="(min-width: 1024px) 170px, 120px"/></div>

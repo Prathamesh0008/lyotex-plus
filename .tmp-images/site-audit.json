@@ -1,0 +1,244 @@
+{
+  "routes": [
+    "/",
+    "/about",
+    "/services",
+    "/products",
+    "/quality",
+    "/contact",
+    "/products/human-growth-hormone-hgh",
+    "/products/insulin-like-growth-factor-igf-lr3",
+    "/products/basic-fibroblast-growth-factor-bfgf-2",
+    "/products/bone-morphogenetic-proteins-bmp",
+    "/products/epidermal-growth-factor-egf",
+    "/products/granulocyte-colony-stimulating-factor-g-csf",
+    "/products/hepatocyte-growth-factor-hgf",
+    "/products/keratinocyte-growth-factor-kgf",
+    "/products/nerve-growth-factor-ngf",
+    "/products/platelet-derived-growth-factor-pdgf",
+    "/products/super-bfgf-2",
+    "/products/eco-serum-fbs-alternative"
+  ],
+  "links": [
+    {
+      "href": "#main-content"
+    },
+    {
+      "href": "/",
+      "status": 200,
+      "hashOk": true
+    },
+    {
+      "href": "/about",
+      "status": 200,
+      "hashOk": true
+    },
+    {
+      "href": "/services",
+      "status": 200,
+      "hashOk": true
+    },
+    {
+      "href": "/products",
+      "status": 200,
+      "hashOk": true
+    },
+    {
+      "href": "/quality",
+      "status": 200,
+      "hashOk": true
+    },
+    {
+      "href": "/contact",
+      "status": 200,
+      "hashOk": true
+    },
+    {
+      "href": "/services#product-clone-development",
+      "status": 200,
+      "hashOk": true
+    },
+    {
+      "href": "/services#upstream-development",
+      "status": 200,
+      "hashOk": true
+    },
+    {
+      "href": "/services#downstream-development",
+      "status": 200,
+      "hashOk": true
+    },
+    {
+      "href": "/services#formulation",
+      "status": 200,
+      "hashOk": true
+    },
+    {
+      "href": "/services#fill-finish",
+      "status": 200,
+      "hashOk": true
+    },
+    {
+      "href": "/services#analytical-development",
+      "status": 200,
+      "hashOk": true
+    },
+    {
+      "href": "/services#technology-transfer",
+      "status": 200,
+      "hashOk": true
+    },
+    {
+      "href": "/services#regulatory-support",
+      "status": 200,
+      "hashOk": true
+    },
+    {
+      "href": "/services#dossier-preparation",
+      "status": 200,
+      "hashOk": true
+    },
+    {
+      "href": "/services#facility-design",
+      "status": 200,
+      "hashOk": true
+    },
+    {
+      "href": "/services#quality-management",
+      "status": 200,
+      "hashOk": true
+    },
+    {
+      "href": "/products/human-growth-hormone-hgh",
+      "status": 200,
+      "hashOk": true
+    },
+    {
+      "href": "/products/insulin-like-growth-factor-igf-lr3",
+      "status": 200,
+      "hashOk": true
+    },
+    {
+      "href": "/products/basic-fibroblast-growth-factor-bfgf-2",
+      "status": 200,
+      "hashOk": true
+    },
+    {
+      "href": "/products/bone-morphogenetic-proteins-bmp",
+      "status": 200,
+      "hashOk": true
+    },
+    {
+      "href": "/products/epidermal-growth-factor-egf",
+      "status": 200,
+      "hashOk": true
+    },
+    {
+      "href": "/products/granulocyte-colony-stimulating-factor-g-csf",
+      "status": 200,
+      "hashOk": true
+    },
+    {
+      "href": "/products/hepatocyte-growth-factor-hgf",
+      "status": 200,
+      "hashOk": true
+    },
+    {
+      "href": "/products/keratinocyte-growth-factor-kgf",
+      "status": 200,
+      "hashOk": true
+    },
+    {
+      "href": "/products/nerve-growth-factor-ngf",
+      "status": 200,
+      "hashOk": true
+    },
+    {
+      "href": "/products/platelet-derived-growth-factor-pdgf",
+      "status": 200,
+      "hashOk": true
+    },
+    {
+      "href": "/products/super-bfgf-2",
+      "status": 200,
+      "hashOk": true
+    },
+    {
+      "href": "/products/eco-serum-fbs-alternative",
+      "status": 200,
+      "hashOk": true
+    },
+    {
+      "href": "tel:+918104481451"
+    },
+    {
+      "href": "tel:+919152422452"
+    },
+    {
+      "href": "mailto:Info@lyotexlife.com"
+    },
+    {
+      "href": "#quality-systems"
+    },
+    {
+      "href": "#cgmp"
+    },
+    {
+      "href": "#analytical"
+    },
+    {
+      "href": "#regulatory"
+    },
+    {
+      "href": "#documentation"
+    },
+    {
+      "href": "#transfer"
+    },
+    {
+      "href": "https://www.google.com/maps/search/?api=1&query=Unit%20No.%2021%2C%20Bhoomi%20Raj%20Woods%2C%20Sector%2020%2C%20Kharghar%2C%20Navi%20Mumbai%20-%20410210"
+    },
+    {
+      "href": "#specifications"
+    },
+    {
+      "href": "mailto:Info@lyotexlife.com?subject=Product%20enquiry%3A%20Human%20Growth%20Hormone%20(HGH)&body=Hello%20Lyotex%20team%2C%0A%0AI%20would%20like%20to%20enquire%20about%20Human%20Growth%20Hormone%20(HGH).%0A%0AIntended%20application%3A%20%0ARequired%20quantity%3A%20%0ATechnical%20documentation%20needed%3A%20%0ATarget%20timeline%3A%20%0A%0AName%20and%20company%3A%20"
+    },
+    {
+      "href": "mailto:Info@lyotexlife.com?subject=Product%20enquiry%3A%20Insulin-like%20Growth%20Factor%20(IGF%20LR3)&body=Hello%20Lyotex%20team%2C%0A%0AI%20would%20like%20to%20enquire%20about%20Insulin-like%20Growth%20Factor%20(IGF%20LR3).%0A%0AIntended%20application%3A%20%0ARequired%20quantity%3A%20%0ATechnical%20documentation%20needed%3A%20%0ATarget%20timeline%3A%20%0A%0AName%20and%20company%3A%20"
+    },
+    {
+      "href": "mailto:Info@lyotexlife.com?subject=Product%20enquiry%3A%20Basic%20Fibroblast%20Growth%20Factor%20(BFGF%202)&body=Hello%20Lyotex%20team%2C%0A%0AI%20would%20like%20to%20enquire%20about%20Basic%20Fibroblast%20Growth%20Factor%20(BFGF%202).%0A%0AIntended%20application%3A%20%0ARequired%20quantity%3A%20%0ATechnical%20documentation%20needed%3A%20%0ATarget%20timeline%3A%20%0A%0AName%20and%20company%3A%20"
+    },
+    {
+      "href": "mailto:Info@lyotexlife.com?subject=Product%20enquiry%3A%20Bone%20Morphogenetic%20Proteins%20(BMP)&body=Hello%20Lyotex%20team%2C%0A%0AI%20would%20like%20to%20enquire%20about%20Bone%20Morphogenetic%20Proteins%20(BMP).%0A%0AIntended%20application%3A%20%0ARequired%20quantity%3A%20%0ATechnical%20documentation%20needed%3A%20%0ATarget%20timeline%3A%20%0A%0AName%20and%20company%3A%20"
+    },
+    {
+      "href": "mailto:Info@lyotexlife.com?subject=Product%20enquiry%3A%20Epidermal%20Growth%20Factor%20(EGF)&body=Hello%20Lyotex%20team%2C%0A%0AI%20would%20like%20to%20enquire%20about%20Epidermal%20Growth%20Factor%20(EGF).%0A%0AIntended%20application%3A%20%0ARequired%20quantity%3A%20%0ATechnical%20documentation%20needed%3A%20%0ATarget%20timeline%3A%20%0A%0AName%20and%20company%3A%20"
+    },
+    {
+      "href": "mailto:Info@lyotexlife.com?subject=Product%20enquiry%3A%20Granulocyte%20Colony-Stimulating%20Factor%20(G%20CSF)&body=Hello%20Lyotex%20team%2C%0A%0AI%20would%20like%20to%20enquire%20about%20Granulocyte%20Colony-Stimulating%20Factor%20(G%20CSF).%0A%0AIntended%20application%3A%20%0ARequired%20quantity%3A%20%0ATechnical%20documentation%20needed%3A%20%0ATarget%20timeline%3A%20%0A%0AName%20and%20company%3A%20"
+    },
+    {
+      "href": "mailto:Info@lyotexlife.com?subject=Product%20enquiry%3A%20Hepatocyte%20Growth%20Factor%20(HGF)&body=Hello%20Lyotex%20team%2C%0A%0AI%20would%20like%20to%20enquire%20about%20Hepatocyte%20Growth%20Factor%20(HGF).%0A%0AIntended%20application%3A%20%0ARequired%20quantity%3A%20%0ATechnical%20documentation%20needed%3A%20%0ATarget%20timeline%3A%20%0A%0AName%20and%20company%3A%20"
+    },
+    {
+      "href": "mailto:Info@lyotexlife.com?subject=Product%20enquiry%3A%20Keratinocyte%20Growth%20Factor%20(KGF)&body=Hello%20Lyotex%20team%2C%0A%0AI%20would%20like%20to%20enquire%20about%20Keratinocyte%20Growth%20Factor%20(KGF).%0A%0AIntended%20application%3A%20%0ARequired%20quantity%3A%20%0ATechnical%20documentation%20needed%3A%20%0ATarget%20timeline%3A%20%0A%0AName%20and%20company%3A%20"
+    },
+    {
+      "href": "mailto:Info@lyotexlife.com?subject=Product%20enquiry%3A%20Nerve%20Growth%20Factor%20(NGF)&body=Hello%20Lyotex%20team%2C%0A%0AI%20would%20like%20to%20enquire%20about%20Nerve%20Growth%20Factor%20(NGF).%0A%0AIntended%20application%3A%20%0ARequired%20quantity%3A%20%0ATechnical%20documentation%20needed%3A%20%0ATarget%20timeline%3A%20%0A%0AName%20and%20company%3A%20"
+    },
+    {
+      "href": "mailto:Info@lyotexlife.com?subject=Product%20enquiry%3A%20Platelet-Derived%20Growth%20Factor%20(PDGF)&body=Hello%20Lyotex%20team%2C%0A%0AI%20would%20like%20to%20enquire%20about%20Platelet-Derived%20Growth%20Factor%20(PDGF).%0A%0AIntended%20application%3A%20%0ARequired%20quantity%3A%20%0ATechnical%20documentation%20needed%3A%20%0ATarget%20timeline%3A%20%0A%0AName%20and%20company%3A%20"
+    },
+    {
+      "href": "mailto:Info@lyotexlife.com?subject=Product%20enquiry%3A%20Super%20BFGF%202%20(Basic%20Fibroblast%20Growth%20Factor%202)&body=Hello%20Lyotex%20team%2C%0A%0AI%20would%20like%20to%20enquire%20about%20Super%20BFGF%202%20(Basic%20Fibroblast%20Growth%20Factor%202).%0A%0AIntended%20application%3A%20%0ARequired%20quantity%3A%20%0ATechnical%20documentation%20needed%3A%20%0ATarget%20timeline%3A%20%0A%0AName%20and%20company%3A%20"
+    },
+    {
+      "href": "mailto:Info@lyotexlife.com?subject=Product%20enquiry%3A%20Eco%20Serum%20(FBS%20Alternative)&body=Hello%20Lyotex%20team%2C%0A%0AI%20would%20like%20to%20enquire%20about%20Eco%20Serum%20(FBS%20Alternative).%0A%0AIntended%20application%3A%20%0ARequired%20quantity%3A%20%0ATechnical%20documentation%20needed%3A%20%0ATarget%20timeline%3A%20%0A%0AName%20and%20company%3A%20"
+    }
+  ],
+  "issues": [],
+  "accessibility": [],
+  "errors": []
+}

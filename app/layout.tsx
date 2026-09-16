@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import BackToTop from "@/components/BackToTop";
 import { siteUrl } from "@/data/seo";
 import "./globals.css";
 
@@ -23,6 +24,7 @@ export default function RootLayout({
         <Header />
         <main id="main-content" tabIndex={-1}>{children}</main>
         <Footer />
+        <BackToTop />
       </body>
     </html>
   );

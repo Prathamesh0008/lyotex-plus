@@ -66,7 +66,7 @@
   .closing { font-size: 0.5625rem; letter-spacing: 0.12em; gap: 0.5rem; }
   .closing span { width: 1.5rem; }
 }
-.dnaArtwork { position: absolute; top: 0; right: 0; width: min(32rem, 32%); height: min(100%, 36rem); z-index: -1; pointer-events: none; background: linear-gradient(90deg, transparent, #69b6ea 65%); opacity: 0.55; mask-image: url('/images/footer-dna-background.png'); mask-mode: luminance; mask-repeat: no-repeat; mask-size: auto 190%; mask-position: right top; }
+.dnaArtwork { position: absolute; top: 0; right: 0; width: min(32rem, 32%); height: min(100%, 36rem); z-index: -1; pointer-events: none; background: linear-gradient(90deg, transparent, #69b6ea 65%); opacity: 0.55; mask-image: url('/images/footer-dna-background.webp'); mask-mode: luminance; mask-repeat: no-repeat; mask-size: auto 190%; mask-position: right top; }
 @media (max-width: 47.999rem) {
   .main { background: #f8fbfe; }
   .artwork { display: none; }

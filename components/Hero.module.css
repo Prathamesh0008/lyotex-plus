@@ -45,6 +45,6 @@
 
 .artwork { position: absolute; inset: 0; z-index: -1; pointer-events: none; overflow: hidden; }
 .artwork > svg { width: 100%; height: 100%; }
-.dnaArtwork { position: absolute; top: 0; left: 0; width: 38%; height: 100%; background: linear-gradient(90deg, transparent, #69b6ea 70%); opacity: .22; transform: scaleX(-1); mask-image: url('/images/footer-dna-background.png'); mask-mode: luminance; mask-repeat: no-repeat; mask-size: auto 150%; mask-position: right top; }
+.dnaArtwork { position: absolute; top: 0; left: 0; width: 38%; height: 100%; background: linear-gradient(90deg, transparent, #69b6ea 70%); opacity: .22; transform: scaleX(-1); mask-image: url('/images/footer-dna-background.webp'); mask-mode: luminance; mask-repeat: no-repeat; mask-size: auto 150%; mask-position: right top; }
 @media (max-width: 63.999rem) { .artwork { bottom: auto; height: 36rem; } .dnaArtwork { width: 55%; opacity: .22; } }
 @media (max-width: 39.999rem) { .artwork { height: 25rem; } .artwork > svg { width: 180%; margin-left: -80%; } .dnaArtwork { width: 65%; opacity: .22; } }
