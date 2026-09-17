@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 
 export const siteUrl = "https://www.lyotexlifesciences.in";
 export const pageSeo = {
-  "/": { title: "Biopharmaceutical Development | Lyotex Life Sciences", description: "Explore Lyotex Life Sciences’ biopharmaceutical services, product expertise, quality approach, and technology transfer from concept to commercialization." },
+  "/": { title: "Biosimilar Development in India | Lyotex Life Sciences", description: "Explore biosimilar development, analytical methods, quality systems and technology transfer with Lyotex Life Sciences, based in Navi Mumbai, India." },
   "/about": { title: "About Lyotex | Lyotex Life Sciences", description: "Learn about Lyotex Life Sciences, its biosimilar development focus, mission, founder, capabilities, and approach to quality and technology transfer." },
-  "/services": { title: "Biosimilar Development Services | Lyotex Life Sciences", description: "Explore product and clone development, upstream and downstream processes, formulation, analytics, regulatory support, and biosimilar technology transfer." },
-  "/products": { title: "Biopharmaceutical Products | Lyotex Life Sciences", description: "Discover Lyotex’s product expertise in insulin and analogues, monoclonal antibodies, peptides, and cytokines, and discuss your project requirements." },
+  "/services": { title: "Biosimilar Development Services in India | Lyotex", description: "Discuss clone development, upstream and downstream processes, formulation, analytical testing and biosimilar technology transfer with Lyotex in India." },
+  "/products": { title: "Growth Factors & Protein Products | Lyotex India", description: "Explore Lyotex’s HGH, IGF LR3, growth factors and Eco Serum portfolio. Request product specifications, documentation and availability from our India team." },
   "/quality": { title: "Quality Systems & cGMP Approach | Lyotex Life Sciences", description: "Explore Lyotex’s quality systems, cGMP approach, analytical development, regulatory support, documentation, and systematic technology transfer." },
-  "/contact": { title: "Contact Lyotex | Biopharmaceutical Project Enquiries", description: "Prepare your biopharmaceutical project enquiry for Lyotex Life Sciences, including company details, development goals, and technology-transfer needs." },
+  "/contact": { title: "Contact Lyotex Life Sciences | Navi Mumbai, India", description: "Contact Lyotex Life Sciences in Kharghar, Navi Mumbai for product enquiries, biosimilar development and technology transfer. Share your project requirements." },
 } as const;
 
 export function createPageMetadata(path: keyof typeof pageSeo): Metadata {

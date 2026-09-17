@@ -1,3 +1,5 @@
+import StructuredData from "@/components/StructuredData";
+import { pageData } from "@/data/structuredData";
 import { createPageMetadata } from "@/data/seo";
 import Image from "next/image";
 import Link from "next/link";
@@ -5,14 +7,7 @@ import CoreCapabilities from "@/components/CoreCapabilities";
 import Founder from "@/components/Founder";
 import styles from "./about.module.css";
 
-const baseMetadata = createPageMetadata("/about");
-const title = "About Lyotex Life Sciences";
-const description = "Learn about Lyotex Life Sciences, its company focus, core capabilities, research, manufacturing support, quality, and biosimilar technology transfer.";
-export const metadata = {
-  ...baseMetadata, title: { absolute: title }, description,
-  openGraph: { ...baseMetadata.openGraph, title, description },
-  twitter: { ...baseMetadata.twitter, title, description },
-};
+export const metadata = createPageMetadata("/about");
 
 // Source: https://www.lyotexlifesciences.in/index.html.
 // Vision: /Input/team.html. No formal mission statement is published.
@@ -26,13 +21,14 @@ const areas = [
 export default function AboutPage() {
   return (
     <>
+      <StructuredData data={pageData("/about", "AboutPage")} />
       <h1 className="sr-only">About Lyotex Life Sciences</h1>
       <Founder />
       <section className="section" aria-labelledby="overview-heading">
         <div className={"site-container " + styles.row}>
           <div className={styles.copy}>
             <h2 id="overview-heading">Company Overview</h2>
-            <p>Lyotex Life Sciences brings together research and development, manufacturing, quality, regulatory, and cGMP expertise. Its services span product selection and clone development through biosimilar technology transfer.</p>
+            <p>Based in Kharghar, Navi Mumbai, India, Lyotex Life Sciences brings together research and development, manufacturing, quality, regulatory, and cGMP expertise. Its services span product selection and clone development through biosimilar technology transfer.</p>
           </div>
           <div className={styles.image}><Image src="/images/about-biologics.webp" alt="Scientific illustration of a researcher at a laboratory bench with molecular forms" fill sizes="(min-width: 1280px) 500px, (min-width: 768px) 42vw, calc(100vw - 40px)" loading="lazy" /></div>
         </div>

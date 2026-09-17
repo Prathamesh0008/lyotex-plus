@@ -1,3 +1,8 @@
+import ProjectQuestions from "@/components/ProjectQuestions";
+import { organizationId } from "@/data/structuredData";
+import { siteUrl } from "@/data/seo";
+import StructuredData from "@/components/StructuredData";
+import { pageData } from "@/data/structuredData";
 import { createPageMetadata } from "@/data/seo";
 import ScienceIcon, { serviceIcons } from "@/components/ScienceIcon";
 import Image from "next/image";
@@ -26,7 +31,9 @@ const services = [
 
 export default function ServicesPage() {
   return <>
-    <h1 className="sr-only">Services</h1>
+      <StructuredData data={pageData("/services", "CollectionPage")} />
+    <StructuredData data={{ "@context": "https://schema.org", "@type": "ItemList", itemListElement: services.map((service, index) => ({ "@type": "ListItem", position: index + 1, item: { "@type": "Service", name: service.title, description: serviceDetails[service.id].description, url: siteUrl + "/services#" + service.id, provider: { "@id": organizationId } } })) }} />
+    <div className={"site-container " + pageStyles.introduction}><h1>Biosimilar development services</h1><p>Discuss your biopharmaceutical project with Lyotex Life Sciences in India. Our services connect clone development, process development, formulation, analytical methods, and technology transfer. Explore the stages below to identify the support your project needs.</p><p>For product enquiries, <Link href="/products">browse our protein and growth factor portfolio</Link>.</p></div>
     <div className={pageStyles.sections}>{services.map((service) => {
       const detail = serviceDetails[service.id];
       return <section key={service.id} id={service.id} className={styles.detail} aria-labelledby={`${service.id}-heading`}>
@@ -36,6 +43,7 @@ export default function ServicesPage() {
         </div>
       </section>;
     })}</div>
+    <ProjectQuestions />
     <section className={`section ${pageStyles.cta}`} aria-labelledby="services-contact-heading">
       <div className={`site-container ${pageStyles.content}`}>
         <div><h2 id="services-contact-heading">Discuss Your Project</h2><p>Connect with Lyotex Life Sciences about your development, quality, and technology-transfer requirements.</p></div>

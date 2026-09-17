@@ -9,6 +9,7 @@ export default function ProductCatalogue() {
     <div className="site-container">
       <div className={styles.heading}>
         <h1 id="products-heading">Our products</h1>
+        <p>Explore protein hormones, growth factors, and Eco Serum from Lyotex Life Sciences in India. Open a product to review enquiry information, then contact our team for specifications, documentation, and availability.</p>
       </div>
       <ul className={styles.gallery}>
         {products.map((product, index) => {

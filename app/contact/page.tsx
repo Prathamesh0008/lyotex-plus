@@ -1,3 +1,5 @@
+import StructuredData from "@/components/StructuredData";
+import { pageData } from "@/data/structuredData";
 import { createPageMetadata } from "@/data/seo";
 import ScienceIcon from "@/components/ScienceIcon";
 import PageIntro from "@/components/PageIntro";
@@ -9,6 +11,7 @@ export const metadata = createPageMetadata("/contact");
 
 export default function ContactPage() {
   return <>
+      <StructuredData data={pageData("/contact", "ContactPage")} />
     <PageIntro title="Get in Touch" description="We are here to support your journey in biopharmaceutical innovation." variant="contact" />
     <section className="section"><div className={`site-container ${styles.layout}`}>
       <div className={styles.details}>

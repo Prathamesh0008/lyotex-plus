@@ -1,3 +1,4 @@
+import StructuredData from "@/components/StructuredData";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
@@ -23,7 +24,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const product = getProduct((await params).slug);
   const title = `${product.name} | Lyotex Life Sciences`;
-  const description = `Enquire about ${product.name} from Lyotex Life Sciences.`;
+  const description = `${product.name}: request specifications, availability and technical documentation from Lyotex Life Sciences in India.`;
   const url = `${siteUrl}/products/${product.slug}`;
   return {
     title: { absolute: title }, description, alternates: { canonical: url },
@@ -48,6 +49,7 @@ export default async function ProductPage({ params }: Props) {
     ["Documentation", "Ask about specification sheet and certificate of analysis availability"],
   ];
   return <div className={styles.page}>
+    <StructuredData data={{ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: siteUrl }, { "@type": "ListItem", position: 2, name: "Products", item: siteUrl + "/products" }, { "@type": "ListItem", position: 3, name: product.name, item: siteUrl + "/products/" + product.slug }] }} />
     <header className={`${styles.hero}`}>
       <div className="site-container">
         <nav className={styles.breadcrumb} aria-label="Breadcrumb">

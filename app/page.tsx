@@ -1,3 +1,5 @@
+import StructuredData from "@/components/StructuredData";
+import { pageData } from "@/data/structuredData";
 import { createPageMetadata } from "@/data/seo";
 import Hero from "@/components/Hero";
 import CompanyIntroduction from "@/components/CompanyIntroduction";
@@ -13,6 +15,7 @@ export const metadata = createPageMetadata("/");
 export default function HomePage() {
   return (
     <>
+      <StructuredData data={pageData("/", "WebPage")} />
       <Hero />
       <CompanyIntroduction />
       <CoreCapabilities />
