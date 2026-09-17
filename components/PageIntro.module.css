@@ -1,0 +1,23 @@
+.hero { position: relative; isolation: isolate; background: linear-gradient(105deg, #f2faff, #e9f5fc); }
+.layout { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); align-items: center; gap: clamp(1rem, 3vw, 3rem); min-height: 300px; }
+.content { padding-block: 2.75rem; }
+.content h1, .contactContent h1 { max-width: 14ch; font-size: clamp(2.25rem, 3.8vw, 3.75rem); line-height: 1.08; font-weight: 700; letter-spacing: -.035em; color: #062867; text-wrap: balance; }
+.content p, .contactContent p { max-width: 36ch; margin-top: 1rem; font-size: 1.0625rem; line-height: 1.55; color: #15365b; }
+.about h1 { max-width: 8ch; }
+.quality h1 { max-width: 18ch; }
+.artwork { min-width: 0; width: 100%; max-width: 640px; justify-self: end; padding-block: 1rem; }
+.image { display: block; width: 100%; height: auto; object-fit: contain; mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
+.contact { overflow: hidden; }
+.contactBackground { object-fit: cover; object-position: center 35%; z-index: -2; }
+.contact::after { content: ''; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, #f0f9fff2 0%, #edf7ffb3 36%, #edf7ff00 65%); }
+.contactContent { min-height: 320px; display: flex; flex-direction: column; justify-content: center; padding-block: 3.5rem; }
+@media (max-width: 47.999rem) {
+  .layout { grid-template-columns: minmax(0, 1fr); gap: 0; min-height: 0; }
+  .content { padding-block: 2rem 0; }
+  .content h1, .contactContent h1 { font-size: clamp(2rem, 7.5vw, 3rem); }
+  .content p, .contactContent p { max-width: 36ch; font-size: 1rem; }
+  .artwork { width: min(100%, 30rem); justify-self: center; padding-block: .75rem 1rem; }
+  .contactContent { min-height: 350px; justify-content: flex-end; padding-block: 8rem 2rem; }
+  .contactBackground { object-position: 70% center; }
+  .contact::after { background: linear-gradient(0deg, #edf8fff5 0%, #edf8ffd9 40%, #edf8ff20 100%); }
+}

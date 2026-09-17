@@ -13,6 +13,9 @@ export const metadata: Metadata = {
     template: "%s | Lyotex Life Sciences",
   },
   description: "Lyotex Life Sciences official website.",
+  icons: {
+    icon: { url: "/favicon.svg", type: "image/svg+xml", sizes: "any" },
+  },
 };
 
 export default function RootLayout({

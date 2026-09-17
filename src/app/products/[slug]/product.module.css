@@ -75,3 +75,13 @@
   .table th, .table td { padding: 0.75rem; }
   .relatedGrid { grid-template-columns: minmax(0, 1fr); gap: 0.25rem; }
 }
+
+/* Reference-inspired product presentation. */
+.hero { background: #fff; padding-block: 1.5rem 3.5rem; }
+.heroGrid { grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: clamp(2rem, 6vw, 5rem); }
+.imageFrame { aspect-ratio: 1; border: 1px solid #dce8f2; background: #edf6fc; }
+.heroCopy h1 { color: #062867; }
+.heroCopy > p { max-width: 48ch; }
+.category { display: inline-flex; margin-bottom: 1rem; padding: .25rem .75rem; border-radius: 2rem; background: #e5f2ff; color: #07559b; font-size: .8125rem; }
+.heroActions { display: flex; align-items: center; flex-wrap: wrap; gap: 1rem 1.5rem; margin-top: 1.5rem; }
+@media (max-width: 47.999rem) { .heroGrid { grid-template-columns: minmax(0, 1fr); } .visual { width: min(100%, 25rem); margin-inline: auto; } }

@@ -9,7 +9,7 @@ export const metadata = createPageMetadata("/contact");
 
 export default function ContactPage() {
   return <>
-    <PageIntro title="Contact Us" description="Connect with Lyotex Life Sciences to discuss your product requirements, biopharmaceutical development, or technology-transfer enquiry." />
+    <PageIntro title="Get in Touch" description="We are here to support your journey in biopharmaceutical innovation." variant="contact" />
     <section className="section"><div className={`site-container ${styles.layout}`}>
       <div className={styles.details}>
         

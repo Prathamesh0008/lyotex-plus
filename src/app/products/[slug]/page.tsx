@@ -57,13 +57,13 @@ export default async function ProductPage({ params }: Props) {
         </nav>
         <div className={styles.heroGrid}>
           <figure className={styles.visual}>
-            <div className={styles.imageFrame}><Image src={detail.image} alt="Abstract biological illustration" fill preload sizes="(min-width: 768px) 176px, 112px" /></div>
+            <div className={styles.imageFrame}><Image src={detail.image} alt="Abstract biological illustration" fill preload sizes="(min-width: 1280px) 480px, (min-width: 768px) 40vw, calc(100vw - 40px)" /></div>
             <figcaption>Representative illustration</figcaption>
           </figure>
           <div className={styles.heroCopy}>
-            <h1>{product.name}</h1>
+            <span className={styles.category}>{detail.category}</span><h1>{product.name}</h1>
             <p>{detail.summary}</p>
-            <a href="#specifications" className={styles.textLink}>View specifications <span aria-hidden="true">&darr;</span></a>
+            <div className={styles.heroActions}><a href={email} className="btn btn--primary">Inquire Now <span aria-hidden="true">&rarr;</span></a><a href="#specifications" className={styles.textLink}>View specifications <span aria-hidden="true">&darr;</span></a></div>
           </div>
         </div>
       </div>
